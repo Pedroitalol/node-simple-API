@@ -18,6 +18,7 @@ describe('Rota de login', () => {
         };
         const httpResponse = sut.route(httpRequest);
         expect(httpResponse.statusCode).toBe(400);
+        expect(httpResponse.mesage).toBe('meu teste')
 
     })
 })
