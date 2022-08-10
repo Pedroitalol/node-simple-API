@@ -4,12 +4,12 @@
   "description": "Uma API simples usando node.js.",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "teste git": "npx lint-staged"
+    "test": "jest --watchAll",
+    "teste-git": "jest"
   },
   "lint-staged": {
     "*.js": [
-      "echo \"TODO: Teste nos arquivos antes de commitar\" && exit 1"
+      "npm teste-git"
     ]
   },
   "keywords": [],
